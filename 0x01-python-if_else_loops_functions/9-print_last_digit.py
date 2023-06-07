@@ -2,6 +2,4 @@
 def print_last_digit(number):
     if(number > 0):
         ldigit = number % 10
-    else:
-        ldigit = abs(number) % 10 * -1
     print(ldigit, end='')
