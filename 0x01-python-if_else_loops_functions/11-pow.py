@@ -7,4 +7,4 @@ def pow(a, b):
     else:
         for i in range(abs(b)):
             a1 /= a
-    return "{:.22f}".format(a1)
+    return a1
