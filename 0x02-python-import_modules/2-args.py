@@ -14,7 +14,7 @@ def main():
             print("{}: {}".format(i, argv[i]))
     else:
         print("0 arguments.")
-        
+
 
 if __name__ == "__main__":
     main()
