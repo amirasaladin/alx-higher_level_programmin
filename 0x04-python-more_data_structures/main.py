@@ -14,3 +14,6 @@ print("{} = {}".format(roman_number, roman_to_int(roman_number)))
 
 roman_number = "DCCVII"
 print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+
+print("none = {}".format(roman_to_int(None)))
+print("not a str = {}".format(roman_to_int(123)))
