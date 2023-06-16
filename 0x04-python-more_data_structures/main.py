@@ -1,19 +1,18 @@
 #!/usr/bin/python3
-""" Roman to Integer test file
-"""
-roman_to_int = __import__('12-roman_to_int').roman_to_int
-roman_number = "X"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-roman_number = "VII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-roman_number = "IX"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+update_dictionary = __import__('7-update_dictionary').update_dictionary
+print_sorted_dictionary = __import__('6-print_sorted_dictionary').print_sorted_dictionary
 
-roman_number = "LXXXVII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+a_dictionary = { 'language': "C", 'number': 89, 'track': "Low level" }
+new_dict = update_dictionary(a_dictionary, 'language', "Python")
+print_sorted_dictionary(new_dict)
+print("--")
+print_sorted_dictionary(a_dictionary)
 
-roman_number = "DCCVII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+print("--")
+print("--")
 
-print("none = {}".format(roman_to_int(None)))
-print("not a str = {}".format(roman_to_int(123)))
+new_dict = update_dictionary(a_dictionary, 'city', "San Francisco")
+print_sorted_dictionary(new_dict)
+print("--")
+print_sorted_dictionary(a_dictionary)
+
